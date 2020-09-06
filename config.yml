@@ -1,0 +1,16 @@
+title: 10th-solutions.com
+description: Help us to create this amazing website
+template:
+  repo: 10th-solutions.com-template
+  name: 10th-solutions.com
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
